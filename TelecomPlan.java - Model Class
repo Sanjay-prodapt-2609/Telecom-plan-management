@@ -1,0 +1,24 @@
+package com.example.telecom.model;
+ 
+public class TelecomPlan {
+    private String planName;
+    private double price;
+    private int validityDays;
+ 
+    // Constructor
+    public TelecomPlan(String planName, double price, int validityDays) {
+        this.planName = planName;
+        this.price = price;
+        this.validityDays = validityDays;
+    }
+ 
+    // Getters and Setters
+    public String getPlanName() { return planName; }
+    public void setPlanName(String planName) { this.planName = planName; }
+ 
+    public double getPrice() { return price; }
+    public void setPrice(double price) { this.price = price; }
+ 
+    public int getValidityDays() { return validityDays; }
+    public void setValidityDays(int validityDays) { this.validityDays = validityDays; }
+}
