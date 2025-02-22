@@ -1,21 +1,13 @@
-package com.example.telecom.controller;
- 
-import com.example.telecom.model.TelecomPlan;
-import org.springframework.web.bind.annotation.*;
- 
-import java.util.Arrays;
-import java.util.List;
- 
-@RestController
-@RequestMapping("/api/plans")
-public class TelecomPlanController {
- 
-    @GetMapping
-    public List<TelecomPlan> getAllPlans() {
-        return Arrays.asList(
-                new TelecomPlan("Basic Plan", 199.0, 28),
-                new TelecomPlan("Standard Plan", 399.0, 56),
-                new TelecomPlan("Premium Plan", 699.0, 84)
-        );
-    }
+package com.example.telecom;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TelecomPlanManagementApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TelecomPlanManagementApplication.class, args);
+	}
+
 }
